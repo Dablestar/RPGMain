@@ -72,7 +72,12 @@
     <Compile Include="Assets\External_Assets\UnityChan\Scripts\ThirdPersonCamera.cs" />
     <Compile Include="Assets\External_Assets\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
     <Compile Include="Assets\External_Assets\UnityChan\SplashScreen\Scripts\SplashScreen.cs" />
+    <Compile Include="Assets\Scripts\Cam.cs" />
     <Compile Include="Assets\Scripts\Character.cs" />
+    <Compile Include="Assets\Scripts\CharacterP.cs" />
+    <Compile Include="Assets\Scripts\Mob.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\Utility.cs" />
     <None Include="Assets\External_Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
     <None Include="Assets\External_Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
     <None Include="Assets\External_Assets\UnityChan\Voice\unity-chan_voice_list.txt" />

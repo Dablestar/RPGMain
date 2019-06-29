@@ -47,16 +47,8 @@ public class Character : MonoBehaviour
     }
     public bool MousePick()
     {
+        return false;
 
-
-    }
-    public NavMeshAgent Nav()
-    {
-            if (_nav == null)
-            {
-                _nav.GetComponent<NavMeshAgent>();
-                return Nav;
-            }
     }
 
 }

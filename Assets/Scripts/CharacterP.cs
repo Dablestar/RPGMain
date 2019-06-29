@@ -5,23 +5,45 @@ using UnityEngine.AI;
 
 public class CharacterP : MonoBehaviour
 {
-  
+    public NavMeshAgent _navi;
+    public Animator _ani;
+    public Animator ani
+    {
+        get
+        {
+            if (_ani == null)
+                _ani = GetComponent<Animator>();
 
+            return _ani;
+        }
+    }
+    public AniManager aniM;
     Vector3 vEnd = Vector3.zero;
     Vector3 vDir = Vector3.zero;
     float fSpeed = 5.0f;
     float rSpeed = 5.0f;
+
+    
     // Start is called before the first frame update
     private void Awake()//인스턴스가 생성될때
     {
-        
+        InitAwake();
     }
-    
+    virtual public void InitAwake()
+    {
+        _navi = GetComponent<NavMeshAgent>();
+    }
     void Start()//화면 렌더링되기 바로 전에
     {
-        transform.position = vEnd;
-        Debug.Log(this.gameObject.name);
+        InitStart();
     }
+    virtual public void InitStart()
+    {
+        transform.position = vEnd;
+        aniM.InitAniManager(ani);
+        aniM = new AniManager();
+    }
+    
 
     bool MousePick()
     {
@@ -62,7 +84,6 @@ public class CharacterP : MonoBehaviour
             MousePick();
             if(MousePick().Equals(true))
             {
-                Debug.DrawLine(transform.position, vEnd, Color.red);
             }
             
         }
@@ -85,7 +106,6 @@ public class CharacterP : MonoBehaviour
         origin.y += 1.5f;
         Vector3 dir = origin;
         dir.y = -dir.y;
-        Debug.DrawLine(origin, dir, Color.black);
 
         RaycastHit[] hits = Physics.RaycastAll(origin, -Vector3.up);
         foreach(RaycastHit hit in hits)

@@ -25,14 +25,7 @@ public class Player : Character
     }
     public override void UpdateDo()
     {
-        base.UpdateDo();
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (Utility.CustomRay(ref out vEnd))
-            {
-                Nav.destination = vEnd;
-            }
-        }
+      
     }
 
     // Update is called once per frame

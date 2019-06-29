@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Cam : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    public Transform CharacterObject;
+    public float camDistance = 5.0f;
+
     void Start()
     {
         

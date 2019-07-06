@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Character : MonoBehaviour
+public class Char : MonoBehaviour
 {
-    NavMeshAgent _nav;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,11 +26,11 @@ public class Character : MonoBehaviour
     }
     virtual public void onEnable()
     {
-        onEnable();
+       
     }
     virtual public void onDisable()
     {
-        onDisable();
+        
     }
     virtual public void InitAwake()
     {
@@ -45,10 +44,6 @@ public class Character : MonoBehaviour
     {
   
     }
-    public bool MousePick()
-    {
-        return false;
-
-    }
+   
 
 }

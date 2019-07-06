@@ -1,0 +1,6 @@
+1. 코드 수정
+2. 애니메이션 이벤트
+3. 프레임워크(AniManager);
+->동작변경(Dictionary, Enum eAniIndex(현재 상태를 나타내는 인덱스)사용)
+4.상태 패턴 분리(currentPattern)
+ex. 현재상태 = 공격, 공격클래스 실행

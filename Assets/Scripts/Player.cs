@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : Character
+public class Player : Char
 {
     // Start is called before the first frame update
     void Start()

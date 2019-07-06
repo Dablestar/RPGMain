@@ -1,0 +1,36 @@
+FollowCam 원리
+
+1, 타겟 지정(Transform target)(카메라가 따라다닐 대상. 주로 플레이어의 캐릭터)
+
+2. 카메라와 대상 사이의 간격(float dist) 지정
+
+3. 카메라의 회전속도 지정
+
+4. 카메라 초기값 지정(보통 0, 0)
+
+5. 위 아래 회전값 제한(float yMinLimit, yMaxLimit)
+
+6. 앵글 최소값 제한(ClampAngle(), |360|)
+
+7. 처음 시작할때 커서를 고정.
+
+8. 오일러각 잡고 시작
+
+9. Update(), 회전속, 앵글값, 카메라 위치변화를 계산
+
+
+
+bounds 구조체와 rect 구조체를 사용하여 물리검사(충돌처리)를 실행.
+
+실제 충돌처리(Colider, Collision 등에 비교해서 매우 빠름)
+
+
+람다 = 정의(델리게이트, 함수포인트)
+
+delegate int Caculate(int a, int b);
+
+Caculate cals = (a,b) => a+b
+
+Caculate cal_2 = (a,b) => {
+	Debug.Log(" ");
+};//세미콜론 붙어야됨

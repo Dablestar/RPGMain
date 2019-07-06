@@ -39,9 +39,7 @@ public class CharacterP : MonoBehaviour
     }
     virtual public void InitStart()
     {
-        transform.position = vEnd;
-        aniM.InitAniManager(ani);
-        aniM = new AniManager();
+        
     }
     
 

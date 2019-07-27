@@ -11,3 +11,7 @@ SingleTon
 T는 참조형식이어야 하며, 매개변수가 없는 생성자를 활용해야 한다.
 where은 T의 제약조건으로, class는 참조형식을 의미
 new()는 매개변수가 없는 생성자를 의미한다.
+
+파일을 불러올때
+StreamReader sr = new StreamReader(데이터 경로);
+Readfile(배열) = File.ReadAllLines(경로);
